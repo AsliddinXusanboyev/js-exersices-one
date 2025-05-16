@@ -32,18 +32,8 @@ let natija = yosh >= 18 ? "Balog'at yoshida" : "Balog'at yoshida emas";
 console.log(natija);
 ```
 
-## 3. Nullish operator (`??`)
-
-Nullish operator qiymat `null` yoki `undefined` bo'lsa, zaxira qiymat beradi.
-
-```js
-let ism;
-let natija = ism ?? "Ism kiritilmagan";
-console.log(natija); // "Ism kiritilmagan"
-```
 
 **Xulosa:**
 
 - `if-else` — shartlarni tekshiradi.
 - Ternary — qisqa shartli yozuv.
-- Nullish (`??`) — qiymat yo'q bo'lsa, zaxira qiymat beradi.
