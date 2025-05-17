@@ -1,39 +1,51 @@
-# JavaScript: `if-else`, Ternary Operator va Nullish Operator
+# Git va GitHub haqida qisqacha dars (Node yozuvi)
 
-## 1. `if-else` operatori
+## Git nima?
 
-`if-else` yordamida shartlarni tekshirish va turli kodlarni bajarish mumkin.
+**Git** — bu dasturiy ta'minot ishlab chiqishda kodlarni boshqarish va versiyalarini saqlash uchun ishlatiladigan tizim. U yordamida kod o‘zgarishlarini kuzatish, saqlash va boshqarish mumkin.
 
-```js
-let yosh = 18;
+## GitHub nima?
 
-if (yosh >= 18) {
-  console.log("Siz balog'at yoshidasiz.");
-} else {
-  console.log("Siz balog'at yoshida emassiz.");
-}
+**GitHub** — bu Git asosida ishlovchi onlayn platforma. U kodlarni internetda saqlash, ulashish va jamoa bilan ishlash imkonini beradi.
 
-let a = "maktab xovlisi";
+## Asosiy Git buyruqlari
 
-if (a == "maktab xovlisi") {
-  console.log(true);
-} else {
-  console.log(false);
-}
+```bash
+# Loyihani yangi Git repozitoriyasiga aylantirish
+git init
+
+# O'zgartirilgan fayllarni kuzatish uchun qo'shish
+git add fayl_nomi
+
+# O'zgartirishlarni saqlash (commit qilish)
+git commit -m "Xabar"
+
+# Masofaviy (remote) repozitoriyaga ulanish
+git remote add origin https://github.com/foydalanuvchi/repo.git
+
+# O'zgartirishlarni GitHub'ga yuklash
+git push -u origin main
 ```
 
-## 2. Ternary operator (`? :`)
+## GitHub'da yangi repozitoriya yaratish
 
-Ternary operator qisqa yozuv uchun ishlatiladi.
+1. GitHub saytiga kiring va hisobingizga kiring.
+2. "New repository" tugmasini bosing.
+3. Repozitoriya nomini kiriting va "Create repository" ni bosing.
 
-```js
-let yosh = 18;
-let natija = yosh >= 18 ? "Balog'at yoshida" : "Balog'at yoshida emas";
-console.log(natija);
+## Loyihani GitHub'ga yuklash
+
+1. Terminalda quyidagi buyruqlarni bajaring:
+
+```bash
+git init
+git add .
+git commit -m "Dastlabki commit"
+git branch -M main
+git remote add origin https://github.com/foydalanuvchi/repo.git
+git push -u origin main
 ```
 
+## Xulosa
 
-**Xulosa:**
-
-- `if-else` — shartlarni tekshiradi.
-- Ternary — qisqa shartli yozuv.
+Git va GitHub yordamida kodlaringizni boshqarish va jamoa bilan samarali ishlash mumkin. Amaliyotda ko‘proq foydalaning!
