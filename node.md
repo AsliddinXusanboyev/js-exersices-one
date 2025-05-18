@@ -27,6 +27,8 @@ git remote add origin https://github.com/foydalanuvchi/repo.git
 git push -u origin main
 ```
 
+git clone
+
 ## GitHub'da yangi repozitoriya yaratish
 
 1. GitHub saytiga kiring va hisobingizga kiring.
