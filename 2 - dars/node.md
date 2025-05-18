@@ -1,60 +1,53 @@
-## 1. Type Conversions (Tiplarni o‘zgartirish)
+# Git va GitHub haqida qisqacha dars (Node yozuvi)
 
-JavaScriptda ma’lumot turlarini bir-biriga o‘zgartirish mumkin. Bu jarayon **type conversion** deb ataladi.
+## Git nima?
 
-### Misollar:
+**Git** — bu dasturiy ta'minot ishlab chiqishda kodlarni boshqarish va versiyalarini saqlash uchun ishlatiladigan tizim. U yordamida kod o‘zgarishlarini kuzatish, saqlash va boshqarish mumkin.
 
-```js
-let son = "123";
-let raqam = Number(son); // Stringdan Numberga o‘zgartirish
-console.log(raqam); // 123
+## GitHub nima?
 
-let qiymat = 456;
-let matn = String(qiymat); // Numberdan Stringga o‘zgartirish
-console.log(matn); // "456"
+**GitHub** — bu Git asosida ishlovchi onlayn platforma. U kodlarni internetda saqlash, ulashish va jamoa bilan ishlash imkonini beradi.
+
+## Asosiy Git buyruqlari
+
+```bash
+# Loyihani yangi Git repozitoriyasiga aylantirish
+git init
+
+# O'zgartirilgan fayllarni kuzatish uchun qo'shish
+git add fayl_nomi
+
+# O'zgartirishlarni saqlash (commit qilish)
+git commit -m "Xabar"
+
+# Masofaviy (remote) repozitoriyaga ulanish
+git remote add origin https://github.com/foydalanuvchi/repo.git
+
+# O'zgartirishlarni GitHub'ga yuklash
+git push -u origin main
 ```
 
-**Boolean**ga o‘zgartirish:
+git clone
 
-```js
-let qiymat = 0;
-let natija = Boolean(qiymat); // false, chunki 0 - false
+## GitHub'da yangi repozitoriya yaratish
+
+1. GitHub saytiga kiring va hisobingizga kiring.
+2. "New repository" tugmasini bosing.
+3. Repozitoriya nomini kiriting va "Create repository" ni bosing.
+
+## Loyihani GitHub'ga yuklash
+
+1. Terminalda quyidagi buyruqlarni bajaring:
+
+```bash
+git init
+git add .
+git commit -m "Dastlabki commit"
+git branch -M main
+git remote add origin https://github.com/foydalanuvchi/repo.git
+git push -u origin main
 ```
 
-## 2. Operatorlar
+## Xulosa
 
-Operatorlar yordamida qiymatlar ustida amallar bajariladi.
-
-### Asosiy operatorlar:
-
-- **Qo‘shish (+)**: `a + b`
-- **Ayirish (-)**: `a - b`
-- **Ko‘paytirish (\*)**: `a * b`
-- **Bo‘lish (/)**: `a / b`
-- **Qoldiq (%)**: `a % b`
-
-### Misollar:
-
-```js
-let a = 10;
-let b = 3;
-console.log(a + b); // 13
-console.log(a % b); // 1
-```
-
-## 3. Mantiqiy Amallar (Logical Operations)
-
-Mantiqiy operatorlar yordamida shartlarni tekshirish mumkin.
-
-- **AND (`&&`)**: Ikkala shart ham true bo‘lsa, natija true.
-- **OR (`||`)**: Kamida bittasi true bo‘lsa, natija true.
-- **NOT (`!`)**: Qiymatni teskarisiga o‘zgartiradi.
-
-### Misollar:
-
-```js
-let yosh = 20;
-console.log(yosh > 18 && yosh < 30); // true
-console.log(yosh < 18 || yosh > 25); // false
-console.log(!(yosh == 20)); // false
-```
+Git va GitHub yordamida kodlaringizni boshqarish va jamoa bilan samarali ishlash mumkin. Amaliyotda ko‘proq foydalaning!

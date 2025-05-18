@@ -1,53 +1,39 @@
-# Git va GitHub haqida qisqacha dars (Node yozuvi)
+# JavaScript: `if-else`, Ternary Operator va Nullish Operator
 
-## Git nima?
+## 1. `if-else` operatori
 
-**Git** — bu dasturiy ta'minot ishlab chiqishda kodlarni boshqarish va versiyalarini saqlash uchun ishlatiladigan tizim. U yordamida kod o‘zgarishlarini kuzatish, saqlash va boshqarish mumkin.
+`if-else` yordamida shartlarni tekshirish va turli kodlarni bajarish mumkin.
 
-## GitHub nima?
+```js
+let yosh = 18;
 
-**GitHub** — bu Git asosida ishlovchi onlayn platforma. U kodlarni internetda saqlash, ulashish va jamoa bilan ishlash imkonini beradi.
+if (yosh >= 18) {
+  console.log("Siz balog'at yoshidasiz.");
+} else {
+  console.log("Siz balog'at yoshida emassiz.");
+}
 
-## Asosiy Git buyruqlari
+let a = "maktab xovlisi";
 
-```bash
-# Loyihani yangi Git repozitoriyasiga aylantirish
-git init
-
-# O'zgartirilgan fayllarni kuzatish uchun qo'shish
-git add fayl_nomi
-
-# O'zgartirishlarni saqlash (commit qilish)
-git commit -m "Xabar"
-
-# Masofaviy (remote) repozitoriyaga ulanish
-git remote add origin https://github.com/foydalanuvchi/repo.git
-
-# O'zgartirishlarni GitHub'ga yuklash
-git push -u origin main
+if (a == "maktab xovlisi") {
+  console.log(true);
+} else {
+  console.log(false);
+}
 ```
 
-git clone
+## 2. Ternary operator (`? :`)
 
-## GitHub'da yangi repozitoriya yaratish
+Ternary operator qisqa yozuv uchun ishlatiladi.
 
-1. GitHub saytiga kiring va hisobingizga kiring.
-2. "New repository" tugmasini bosing.
-3. Repozitoriya nomini kiriting va "Create repository" ni bosing.
-
-## Loyihani GitHub'ga yuklash
-
-1. Terminalda quyidagi buyruqlarni bajaring:
-
-```bash
-git init
-git add .
-git commit -m "Dastlabki commit"
-git branch -M main
-git remote add origin https://github.com/foydalanuvchi/repo.git
-git push -u origin main
+```js
+let yosh = 18;
+let natija = yosh >= 18 ? "Balog'at yoshida" : "Balog'at yoshida emas";
+console.log(natija);
 ```
 
-## Xulosa
 
-Git va GitHub yordamida kodlaringizni boshqarish va jamoa bilan samarali ishlash mumkin. Amaliyotda ko‘proq foydalaning!
+**Xulosa:**
+
+- `if-else` — shartlarni tekshiradi.
+- Ternary — qisqa shartli yozuv.
