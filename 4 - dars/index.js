@@ -1,3 +1,5 @@
+// if / else / else if / ? / :
+
 // let yosh = 17;
 
 // if (yosh >= 18) {
