@@ -1,3 +1,5 @@
+// tpye convertion / mantiqiy amallar / operatorlar
+
 // // // let son = "123";
 // // // let raqam = Number(son); // Stringdan Numberga o‘zgartirish
 // // // console.log(raqam); // 123
