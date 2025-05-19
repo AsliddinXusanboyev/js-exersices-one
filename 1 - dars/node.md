@@ -48,7 +48,7 @@ O'zgaruvchilarni to'g'ri tanlash kodni tushunarli va samarali qiladi.
 
 ## JavaScript Ma'lumot Turlari (Data Types)
 
-JavaScriptda ma'lumot turlari ikkiga bo'linadi: Primitive va Non-Primitive.
+JavaScriptda ma'lumot turlari ikkiga bo'linadi Primitive va Non-Primitive.
 
 ### Primitive Ma'lumot Turlari
 
@@ -69,7 +69,7 @@ Primitive ma'lumot turlari oddiy qiymatlarni ifodalaydi va quyidagilarni o'z ich
    console.log(yosh, pi);
 
 3. Boolean  
-   Mantiqiy qiymatlarni ifodalaydi: true yoki false.
+   Mantiqiy qiymatlarni ifodalaydi true yoki false.
 
    let rost = true;
    let yolg'on = false;
@@ -94,10 +94,10 @@ Primitive ma'lumot turlari oddiy qiymatlarni ifodalaydi va quyidagilarni o'z ich
    console.log(symbol);
 
 7. BigInt  
-   Juda katta butun sonlarni ifodalaydi.
+    Juda katta butun sonlarni ifodalaydi.
 
    `Number.MAX.SAFE.INTAGER
-   Number.MIN.SAFE.INTAGER`
+Number.MIN.SAFE.INTAGER`
 
    let kattaSon = 96385274100147258369n;
    console.log(kattaSon);
@@ -133,13 +133,13 @@ Non-Primitive ma'lumot turlari murakkab tuzilmalarni ifodalaydi:
 
 JavaScriptda ma'lumot turlarini to'g'ri tanlash kodni samarali va tushunarli qiladi. Primitive turlar oddiy qiymatlar uchun, non-primitive turlar esa murakkab tuzilmalar uchun ishlatiladi.
 
-## JavaScriptda Xotira Boshqaruvi: Stack va Heap
+## JavaScriptda Xotira Boshqaruvi Stack va Heap
 
 JavaScriptda xotira boshqaruvi ikkita asosiy tuzilma orqali amalga oshiriladi: Stack va Heap. Ushbu tuzilmalar ma'lumotlarni saqlash va ularga kirishni samarali boshqarish uchun ishlatiladi.
 
 ### Stack (Stek)
 
-Stack - bu ma'lumotlarni tartib bilan saqlash uchun ishlatiladigan tezkor va cheklangan xotira tuzilmasi. U LIFO (Last In, First Out) tamoyiliga asoslangan, ya'ni oxirgi qo'shilgan ma'lumot birinchi bo'lib o'chiriladi.
+Stack - bu ma'lumotlarni tartib bilan saqlash uchun ishlatiladigan tezkor va cheklangan xotira tuzilmasi.
 
 #### Stackning xususiyatlari:
 
@@ -151,7 +151,7 @@ Stack - bu ma'lumotlarni tartib bilan saqlash uchun ishlatiladigan tezkor va che
 #### Misol:
 
 function hisobla(a, b) {
-let natija = a + b; 
+let natija = a + b;
 }
 hisobla(5, 10);
 
@@ -161,14 +161,14 @@ Yuqoridagi misolda a, b va natija o'zgaruvchilari stekda saqlanadi va funksiya c
 
 ### Heap (Xip)
 
-Heap - bu murakkab va dinamik ma'lumotlarni saqlash uchun ishlatiladigan xotira tuzilmasi. U strukturaviy ma'lumotlar (masalan, obyektlar va massivlar) uchun ishlatiladi.
+Heap - bu murakkab va dinamik ma'lumotlarni saqlash uchun ishlatiladigan xotira tuzilmasi. U strukturaviy ma'lumotlar uchun ishlatiladi.
 
 #### Heapning xususiyatlari:
 
-1. Dinamik xotira: O'lchami oldindan belgilangan emas va kerak bo'lganda kengaytiriladi.
-2. Sekinroq: Ma'lumotlarni yozish va o'qish stekka qaraganda sekinroq.
-3. Non-Primitive turlarni saqlash: Object, Array, Function kabi murakkab tuzilmalar xipda saqlanadi.
-4. Garbage Collection: JavaScript avtomatik ravishda foydalanilmayotgan ma'lumotlarni xipdan o'chiradi.
+1. Dinamik xotira O'lchami oldindan belgilangan emas va kerak bo'lganda kengaytiriladi.
+2. Sekinroq Ma'lumotlarni yozish va o'qish stekka qaraganda sekinroq.
+3. Non-Primitive turlarni saqlash Object, Array, Function kabi murakkab tuzilmalar xipda saqlanadi.
+4. Garbage Collection JavaScript avtomatik ravishda foydalanilmayotgan ma'lumotlarni xipdan o'chiradi.
 
 #### Misol:
 
@@ -181,20 +181,9 @@ Yuqoridagi misolda talaba obyektining qiymatlari xipda saqlanadi, lekin unga ish
 
 ---
 
-### Stack va Heap o'rtasidagi farqlar
-
-| Xususiyat                | Stack                              | Heap                      |
-| ------------------------ | ---------------------------------- | ------------------------- |
-| Xotira turi              | Statik                             | Dinamik                   |
-| Tezlik                   | Tez                                | Sekin                     |
-| Saqlanadigan ma'lumotlar | Primitive turlar                   | Non-Primitive turlar      |
-| Xotira boshqaruvi        | Avtomatik (funksiya tugashi bilan) | Garbage Collection orqali |
-
----
-
 ### Xotira muammolari
 
-1. Memory Leak (Xotira oqishi): Foydalanilmayotgan obyektlar xipda qolib ketishi mumkin.
+1. Memory Leak (Xotira oqishi) Foydalanilmayotgan obyektlar xipda qolib ketishi mumkin.
 
    let globalObj = {};
    function addData() {
@@ -202,7 +191,7 @@ Yuqoridagi misolda talaba obyektining qiymatlari xipda saqlanadi, lekin unga ish
    }
    addData(); // 'data' xotiradan o'chirilmaydi
 
-2. Stack Overflow: Juda ko'p rekursiv chaqiruvlar stekni to'ldirib yuborishi mumkin.
+2. Stack Overflow Juda ko'p rekursiv chaqiruvlar stekni to'ldirib yuborishi mumkin.
 
    function rekursiya() {
    rekursiya(); // Stack Overflow xatosi
